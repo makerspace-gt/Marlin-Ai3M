@@ -378,11 +378,14 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
+  #define  DEFAULT_Kp 10.50
+  #define  DEFAULT_Ki  0.64
+  #define  DEFAULT_Kd 43.02
 
   // i3 Mega stock v5 hotend, 40W heater cartridge (3.6Ω @ 22°C)
-  #define  DEFAULT_Kp 15.94
-  #define  DEFAULT_Ki 1.17
-  #define  DEFAULT_Kd 54.19
+  //#define  DEFAULT_Kp 15.94
+  //#define  DEFAULT_Ki 1.17
+  //#define  DEFAULT_Kd 54.19
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -436,10 +439,15 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+  //from pidautotune
+  #define DEFAULT_bedKp 169.87
+  #define DEFAULT_bedKi  37.55
+  #define DEFAULT_bedKd 258.05
+
   //Anycubic i3 Mega Ultrabase (0.9Ω @ 22°C)
-  #define DEFAULT_bedKp 251.78
-  #define DEFAULT_bedKi 49.57
-  #define DEFAULT_bedKd 319.73
+  //#define DEFAULT_bedKp 251.78
+  //#define DEFAULT_bedKi 49.57
+  //#define DEFAULT_bedKd 319.73
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
